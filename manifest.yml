@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gs-spring-boot-docker
+- name: gs-spring-boot-docker-cf
  # buildpack: java_buildpack
   memory: 788M
   instances: 1
