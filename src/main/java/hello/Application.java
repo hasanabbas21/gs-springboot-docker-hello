@@ -11,10 +11,12 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "** Hello Docker World - Message 107 **";
+
+        return "** Hello Docker World - Message 02/16 - Kubernetes **";
+       
     }
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
