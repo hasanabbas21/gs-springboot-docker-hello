@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gs-spring-boot-docker-cf-jenkins
+- name: gs-spring-boot-jar-cf-jenkins
   buildpack: java_buildpack
   memory: 800M
   instances: 1
