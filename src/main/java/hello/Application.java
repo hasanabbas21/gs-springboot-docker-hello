@@ -1,5 +1,7 @@
 package hello;
 
+import java.io.PrintWriter;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,8 +14,11 @@ public class Application {
     @RequestMapping("/")
     public String home() {
 
-        return "** Hello Docker World - Message 02/16 - Kubernetes **";
+        // return "** Hello Docker World - Message 02/16 - Kubernetes **";
+    	
+    	String out = "<html><body><h1>Hello Everyone - have a nice day !!</h1></body></html>";
        
+    	return out;
     }
 
 	public static void main(String[] args) {
