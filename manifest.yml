@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gs-spring-boot-docker-auto-jenkins_220
+- name: gs-spring-boot-auto-jenkins-0220
   buildpack: java_buildpack
   memory: 800M
   instances: 1
