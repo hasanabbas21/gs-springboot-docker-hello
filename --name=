@@ -1,9 +1,0 @@
-
-Found multiple arguments which look like a cluster name
-	"2" (as argument)
-	"t2.micro" (as argument)
-	"t2.micro" (as argument)
-
-This often happens if you specify an argument to a boolean flag without using =
-For example: use `--bastion=true` or `--bastion`, not `--bastion true`
-
