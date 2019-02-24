@@ -94,6 +94,7 @@
 
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
+						<checkModificationExclude>**</checkModificationExclude>
 					</checkModificationExcludes>
 				</configuration>
 			</plugin>
