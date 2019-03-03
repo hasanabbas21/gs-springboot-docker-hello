@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools { 
-        maven 'Maven 3.6.0' 
+        maven 'maven' 
         jdk 'java8' 
     }
     stages {
@@ -13,11 +13,21 @@ pipeline {
                 ''' 
             }
         }
-
+        
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                echo 'Clean and Build Project'
+                sh " mvn clean package"
             }
         }
+        
+         stage ('Deploy to Artifactory') {
+            steps {
+                echo 'Deploying jar to artifactory.'
+                sh " mvn deploy"
+            }
+        }
+        
+        
     }
 }
