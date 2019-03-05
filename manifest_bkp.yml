@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gs-spring-boot-docker-cf
+- name: gs-spring-boot-docker-cf-docker
   memory: 800M
   instances: 1
   env:
