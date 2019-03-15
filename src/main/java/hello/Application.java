@@ -31,8 +31,13 @@ public class Application {
              e.printStackTrace();
          }
     	
+<<<<<<< HEAD
     	String out = "<html><body><h1 align=\"center\">Hello Everyone - have a great day !!</h1>"
     			+ "<h2 align=\"center\">Who ran this request : " + hostname + " </h2></body></html>";
+=======
+    	String out = "<html><body><h1 align=\"center\">Hello Everyone - have a nice day !!</h1>"
+    			+ "<h2 align=\"center\">Pod name : " + hostname + " </h2></body></html>";
+>>>>>>> release/mha_release_4.0
        
     	return out;
     }

@@ -1,6 +1,10 @@
 Manifest-Version: 1.0
 Implementation-Title: Spring Boot Docker
+<<<<<<< HEAD
 Implementation-Version: 0.0.17-SNAPSHOT
+=======
+Implementation-Version: 0.0.19-SNAPSHOT
+>>>>>>> release/mha_release_4.0
 Built-By: mirzaabbas
 Implementation-Vendor-Id: org.springframework
 Spring-Boot-Version: 2.0.5.RELEASE
