@@ -31,7 +31,7 @@ public class Application {
              e.printStackTrace();
          }
     	
-    	String out = "<html><body><h1 align=\"center\">Hello Everyone - have a great! day</h1>"
+    	String out = "<html><body><h1 align=\"center\">Hello Everyone - have a great day !@! </h1>"
     			+ "<h2 align=\"center\">Pod name : " + hostname + " </h2></body></html>";
 
        
