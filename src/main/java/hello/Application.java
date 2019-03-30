@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
+
 @SpringBootApplication
 @RestController
 public class Application {
@@ -25,6 +27,7 @@ public class Application {
              hostname = ip.getHostName();
              System.out.println("Your current IP address : " + ip);
              System.out.println("Your current Hostname : " + hostname);
+             System.out.println("Count ");
   
          } catch (UnknownHostException e) {
   
