@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,19 +17,28 @@ import ch.qos.logback.core.net.SyslogOutputStream;
 @RestController
 public class Application {
 
+	int counter = 0;
     @RequestMapping("/")
-    public String home() {
+    public String home(HttpServletRequest request) {
 
         // return "** Hello Docker World - Message 02/16 - Kubernetes **";
     	
     	 InetAddress ip;
          String hostname = null;
+         counter++;
+         String deviceType = null;
          try {
              ip = InetAddress.getLocalHost();
              hostname = ip.getHostName();
              System.out.println("Your current IP address : " + ip);
              System.out.println("Your current Hostname : " + hostname);
-             System.out.println("Count ");
+             System.out.println("Count " + counter);
+             
+             if(request.getHeader("User-Agent").indexOf("Mobile") != -1) {
+            	    deviceType = "MOBILE";
+            	  } else {
+            	    deviceType = "NON MOBILE";
+            	  }
   
          } catch (UnknownHostException e) {
   
@@ -65,12 +76,12 @@ public class Application {
     			"    <th>MTN123456789</th>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
-    			"    <td>SUBSCRIBER NAME</th>\n" + 
-    			"    <td>JOHN DOE</th>\n" + 
+    			"    <td>SUBSCRIBER NAME</td>\n" + 
+    			"    <td>JOHN DOE</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
-    			"    <td>PLAN NAME</th>\n" + 
-    			"    <td>HMO Blue NE Deductible</th>\n" + 
+    			"    <td>PLAN NAME</td>\n" + 
+    			"    <td>HMO Blue NE Deductible</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
     			"    <td>PCP NAME</td>\n" + 
@@ -90,27 +101,41 @@ public class Application {
     			"  </tr>\n" + 
     			"</table>\n" + 
     			"\n" + 
-//    			"\n" + 
-//    			"<h2>ACCUMULATIONS</h2>\n" + 
-//    			"\n" + 
-//    			"<table>\n" + 
-//    			"  <tr>\n" + 
-//    			"    <th>SUBSCRIBER #</th>\n" + 
-//    			"    <th>MTN123456789</th>\n" + 
-//    			"  </tr>\n" + 
-//    			"  <tr>\n" + 
-//    			"    <td>INDIVIDUAL DEDUCTIBLE MET </th>\n" + 
-//    			"    <td>$700</th>\n" + 
-//    			"  </tr>\n" + 
-//    			"  <tr>\n" + 
-//    			"    <td>FAMILY DEDUCTIBLE MET</th>\n" + 
-//    			"    <td>$2000</th>\n" + 
-//    			"  </tr>\n" + 
-//    			"  <tr>\n" + 
-//    			"    <td>CHIRO VISITS LEFT</td>\n" + 
-//    			"    <td>6/10</td>\n" + 
-//    			"  </tr>\n" + 
-//    			"</table>\n" + 
+    			"\n" + 
+    			"<h2>ACCUMULATIONS</h2>\n" + 
+    			"\n" + 
+    			"<table>\n" + 
+    			"  <tr>\n" + 
+    			"    <th>SUBSCRIBER #</th>\n" + 
+    			"    <th>MTN123456789</th>\n" + 
+    			"  </tr>\n" + 
+    			"  <tr>\n" + 
+    			"    <td>INDIVIDUAL DEDUCTIBLE MET </td>\n" + 
+    			"    <td>$700</td>\n" + 
+    			"  </tr>\n" + 
+    			"  <tr>\n" + 
+    			"    <td>FAMILY DEDUCTIBLE MET</td>\n" + 
+    			"    <td>$2000</td>\n" + 
+    			"  </tr>\n" + 
+    			"  <tr>\n" + 
+    			"    <td>CHIRO VISITS LEFT</td>\n" + 
+    			"    <td>6/10</td>\n" + 
+    			"  </tr>\n" + 
+    			"</table>\n" + 
+				"\n" + 
+				"\n" + 
+    			"<h2>ANALYTICS</h2>\n" + 
+    			"\n" + 
+				"<table>\n" + 
+				"  <tr>\n" + 
+    			"    <th>DEVICE TYPE</th>\n" + 
+    			"    <th>"+ deviceType +"</th>\n" + 
+    			"  </tr>\n" + 
+				"  <tr>\n" + 
+				"    <td>SERVICE CALL COUNTER </td>\n" + 
+				"    <td>"+counter+"</td>\n" + 
+				"  </tr>\n" + 
+				"</table>\n" + 
     			"</body>\n" + 
     			"</html>";
        
