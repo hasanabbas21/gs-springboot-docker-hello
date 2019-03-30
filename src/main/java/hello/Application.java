@@ -90,27 +90,27 @@ public class Application {
     			"  </tr>\n" + 
     			"</table>\n" + 
     			"\n" + 
-    			"\n" + 
-    			"<h2>ACCUMULATIONS</h2>\n" + 
-    			"\n" + 
-    			"<table>\n" + 
-    			"  <tr>\n" + 
-    			"    <th>SUBSCRIBER #</th>\n" + 
-    			"    <th>MTN123456789</th>\n" + 
-    			"  </tr>\n" + 
-    			"  <tr>\n" + 
-    			"    <td>INDIVIDUAL DEDUCTIBLE MET </th>\n" + 
-    			"    <td>$700</th>\n" + 
-    			"  </tr>\n" + 
-    			"  <tr>\n" + 
-    			"    <td>FAMILY DEDUCTIBLE MET</th>\n" + 
-    			"    <td>$2000</th>\n" + 
-    			"  </tr>\n" + 
-    			"  <tr>\n" + 
-    			"    <td>CHIRO VISITS LEFT</td>\n" + 
-    			"    <td>6/10</td>\n" + 
-    			"  </tr>\n" + 
-    			"</table>\n" + 
+//    			"\n" + 
+//    			"<h2>ACCUMULATIONS</h2>\n" + 
+//    			"\n" + 
+//    			"<table>\n" + 
+//    			"  <tr>\n" + 
+//    			"    <th>SUBSCRIBER #</th>\n" + 
+//    			"    <th>MTN123456789</th>\n" + 
+//    			"  </tr>\n" + 
+//    			"  <tr>\n" + 
+//    			"    <td>INDIVIDUAL DEDUCTIBLE MET </th>\n" + 
+//    			"    <td>$700</th>\n" + 
+//    			"  </tr>\n" + 
+//    			"  <tr>\n" + 
+//    			"    <td>FAMILY DEDUCTIBLE MET</th>\n" + 
+//    			"    <td>$2000</th>\n" + 
+//    			"  </tr>\n" + 
+//    			"  <tr>\n" + 
+//    			"    <td>CHIRO VISITS LEFT</td>\n" + 
+//    			"    <td>6/10</td>\n" + 
+//    			"  </tr>\n" + 
+//    			"</table>\n" + 
     			"</body>\n" + 
     			"</html>";
        

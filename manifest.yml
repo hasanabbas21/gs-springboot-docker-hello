@@ -1,6 +1,6 @@
 ---
 applications:
-- name: etedxv2
+- name: etedxv1
   buildpack: java_buildpack
   memory: 800M
   instances: 1
