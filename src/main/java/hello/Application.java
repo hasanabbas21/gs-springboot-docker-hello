@@ -1,8 +1,14 @@
 package hello;
 
+import java.awt.List;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,6 +24,8 @@ import ch.qos.logback.core.net.SyslogOutputStream;
 public class Application {
 
 	int counter = 0;
+	 HashMap<String, Integer> hmap = new HashMap<String, Integer>();
+	 
     @RequestMapping("/")
     public String home(HttpServletRequest request) {
 
@@ -27,18 +35,29 @@ public class Application {
          String hostname = null;
          counter++;
          String deviceType = null;
+         
          try {
              ip = InetAddress.getLocalHost();
-             hostname = ip.getHostName();
+             hostname = request.getHeader("X-FORWARDED-FOR");
              System.out.println("Your current IP address : " + ip);
              System.out.println("Your current Hostname : " + hostname);
              System.out.println("Count " + counter);
+            
              
              if(request.getHeader("User-Agent").indexOf("Mobile") != -1) {
             	    deviceType = "MOBILE";
             	  } else {
             	    deviceType = "NON MOBILE";
             	  }
+             
+             if (hmap.containsKey(hostname)) {
+                 System.out.println("Key Exists for hostname " + hostname);
+            	 hmap.put(hostname, hmap.get(hostname) + 1);
+             } else {
+            	 System.out.println("Key Does Not Exist");
+            	 hmap.put(hostname, 1);
+             }
+              
   
          } catch (UnknownHostException e) {
   
@@ -85,7 +104,7 @@ public class Application {
     			"  </tr>\n" + 
     			"  <tr>\n" + 
     			"    <td>PCP NAME</td>\n" + 
-    			"    <td>DR. Mark</td>\n" + 
+    			"    <td>DR. TED</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
     			"    <td>CO PAY</td>\n" + 
@@ -141,7 +160,7 @@ public class Application {
        
     	return html;
     }
-
+ 
 	public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
