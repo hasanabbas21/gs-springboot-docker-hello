@@ -137,7 +137,7 @@ public class Application {
     			"    <td>$2000</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
-    			"    <td>CHIRO VISITS LEFT</td>\n" + 
+    			"    <td>PHYSIO VISITS LEFT</td>\n" + 
     			"    <td>6/10</td>\n" + 
     			"  </tr>\n" + 
     			"</table>\n" + 
