@@ -103,7 +103,7 @@ public class Application {
     			"    <td>HMO Blue NE Deductible</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
-    			"    <td>PCP NAME</td>\n" + 
+    			"    <td>Dr NAME</td>\n" + 
     			"    <td>DR. TED</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
