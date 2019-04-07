@@ -47,7 +47,7 @@ public class Application {
              if(request.getHeader("User-Agent").indexOf("Mobile") != -1) {
             	    deviceType = "MOBILE";
             	  } else {
-            	    deviceType = "NON MOBILE";
+            	    deviceType = "WEB";
             	  }
              
              if (hmap.containsKey(hostname)) {
