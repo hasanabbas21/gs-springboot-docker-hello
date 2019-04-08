@@ -84,6 +84,9 @@ public class Application {
     			"}\n" + 
     			" th {\n" + 
     			"  background-color: #917535;\n" + 
+    			"}\n" +
+    			" td {\n" + 
+    			"  color: #3B170B;\n" + 
     			"}\n" + 
     			"\n" + 
     			"tr:nth-child(even) {\n" + 
