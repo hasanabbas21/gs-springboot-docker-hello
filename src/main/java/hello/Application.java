@@ -82,6 +82,9 @@ public class Application {
     			"  text-align: left;\n" + 
     			"  padding: 8px;\n" + 
     			"}\n" + 
+    			" th {\n" + 
+    			"  background-color: #CD853F;\n" + 
+    			"}\n" + 
     			"\n" + 
     			"tr:nth-child(even) {\n" + 
     			"  background-color: #dddddd;\n" + 
@@ -94,9 +97,10 @@ public class Application {
     			"  max-width: 480px;\n" + 
     			"  margin: auto;\n" + 
     			"  background-color: #107896;\n" + 
-    			"  height: 930px;\n" + 
+    			"  overflow: auto;\n" + 
     			"  color: white;\n" + 
     			"  border-radius: 10px;\n" + 
+    			"  padding-bottom: 25px;\n" +
     			"}\n" + 
     			"\n" + 
     			".topnav {\n" + 
@@ -143,7 +147,7 @@ public class Application {
     			"\n" + 
     			"<!-- Top Navigation Menu -->\n" + 
     			"<div class=\"topnav\">\n" + 
-    			"  <a href=\"#home\" class=\"active\">ETEDX - Blue Cross Blue Shield of MA</a>\n" + 
+    			"  <a href=\"#home\" class=\"active\"><b>ETEDX - Blue Cross Blue Shield of MA</b></a>\n" + 
     			"  <div id=\"myLinks\">\n" + 
     			"    <a href=\"#about\">About</a>\n" + 
     			"  </div>\n" + 
@@ -154,7 +158,7 @@ public class Application {
     			"\n" + 
     			"<div style=\"padding-left:16px\">\n" + 
     			"  <h2>PLAN SEARCH API - v2</h2>\n" + 
-    			"  <p>This api returns a list of plans that are active as of date and a list of cenceled plans in the last 2 years</p>\n" + 
+    			"  <p>This api returns a list of plans that are active as of date and a list of canceled plans in the last 2 years</p>\n" + 
     			"<table>\n" + 
     			"  <tr>\n" + 
     			"    <th>PLAN NAME</th>\n" + 
@@ -236,6 +240,8 @@ public class Application {
 				"    <td>NUMBER OF REQUESTS</td>\n" + 
 				"    <td>"+counter+"</td>\n" + 
 				"  </tr>\n" + 
+    			"\n" + 
+    			"\n" + 
     			"</div>\n" + 
     			"\n" + 
     			"<!-- End smartphone / tablet look -->\n" + 
