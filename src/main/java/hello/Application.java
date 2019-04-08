@@ -83,7 +83,7 @@ public class Application {
     			"  padding: 8px;\n" + 
     			"}\n" + 
     			" th {\n" + 
-    			"  background-color: #CD853F;\n" + 
+    			"  background-color: #917535;\n" + 
     			"}\n" + 
     			"\n" + 
     			"tr:nth-child(even) {\n" + 
