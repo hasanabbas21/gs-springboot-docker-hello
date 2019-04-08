@@ -158,7 +158,7 @@ public class Application {
     			"\n" + 
     			"<div style=\"padding-left:16px\">\n" + 
     			"  <h2>PLAN SEARCH API - v2</h2>\n" + 
-    			"  <p>This api returns a list of plans that are active as of date and a list of canceled plans in the last 2 years</p>\n" + 
+    			"  <p>This api returns a list of plans that are active as of current date and a list of canceled plans in the last 2 years</p>\n" + 
     			"<table>\n" + 
     			"  <tr>\n" + 
     			"    <th>PLAN NAME</th>\n" + 
