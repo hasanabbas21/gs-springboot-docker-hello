@@ -147,7 +147,7 @@ public class Application {
     			"\n" + 
     			"<!-- Top Navigation Menu -->\n" + 
     			"<div class=\"topnav\">\n" + 
-    			"  <a href=\"#home\" class=\"active\"><b>ETEDX - Blue Cross Blue Shield of MA</b></a>\n" + 
+    			"  <a href=\"#home\" class=\"active\"><b>ETEDX - BLUE CROSS BLUE SHIELD OF MA</b></a>\n" + 
     			"  <div id=\"myLinks\">\n" + 
     			"    <a href=\"#about\">About</a>\n" + 
     			"  </div>\n" + 
