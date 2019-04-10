@@ -185,7 +185,7 @@ public class Application {
     			"  </tr>\n" + 
     			"  <tr>\n" + 
     			"    <td>Preferred Blue PPO Options Deductible</td>\n" + 
-    			"    <td>DENTAL</td>\n" + 
+    			"    <td>MEDICAL</td>\n" + 
     			"  </tr>\n" + 
     			"  <tr>\n" + 
     			"    <td>Dental Blue Pediatric Essential Benefits</td>\n" + 
