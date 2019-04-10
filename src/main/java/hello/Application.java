@@ -54,7 +54,7 @@ public class Application {
                  System.out.println("Key Exists for hostname " + hostname);
             	 hmap.put(hostname, hmap.get(hostname) + 1);
              } else {
-            	 System.out.println("Key Does Not Exist for ");
+            	 System.out.println("Key Does Not Exist for item ");
             	 hmap.put(hostname, 1);
              }
               
